@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1496px" height="8px" preserveAspectRatio="none" viewBox="0 0 1496 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Billboard (1500 x 700 px) / Parts / 07 Supergraphic Bar / Horizontal (0.5 rem)</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1496" height="8"></rect>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#942230" offset="0%"></stop>
+            <stop stop-color="#921913" offset="3.60939%"></stop>
+            <stop stop-color="#B02638" offset="8.46491%"></stop>
+            <stop stop-color="#AE1917" offset="12.3651%"></stop>
+            <stop stop-color="#B01917" offset="12.55144%"></stop>
+            <stop stop-color="#CA1517" offset="15.32108%"></stop>
+            <stop stop-color="#D41317" offset="16.9679%"></stop>
+            <stop stop-color="#C31A2E" offset="18.13177%"></stop>
+            <stop stop-color="#972D69" offset="20.56109%"></stop>
+            <stop stop-color="#87347F" offset="21.4164%"></stop>
+            <stop stop-color="#843580" offset="24.3585%"></stop>
+            <stop stop-color="#6E358B" offset="26.3829%"></stop>
+            <stop stop-color="#39418F" offset="29.1113%"></stop>
+            <stop stop-color="#14387F" offset="32.4153%"></stop>
+            <stop stop-color="#312A6F" offset="41.8102%"></stop>
+            <stop stop-color="#283486" offset="49.4023%"></stop>
+            <stop stop-color="#1C61A0" offset="55.8085%"></stop>
+            <stop stop-color="#327DAB" offset="58.75911%"></stop>
+            <stop stop-color="#50A1B9" offset="63.19666%"></stop>
+            <stop stop-color="#5BAFBF" offset="65.55941%"></stop>
+            <stop stop-color="#55ADBE" offset="67.14228%"></stop>
+            <stop stop-color="#46A6BB" offset="69.16412%"></stop>
+            <stop stop-color="#2B9CB6" offset="71.42345%"></stop>
+            <stop stop-color="#078DAE" offset="73.84076%"></stop>
+            <stop stop-color="#008AAD" offset="74.2645%"></stop>
+            <stop stop-color="#009871" offset="83.42152%"></stop>
+            <stop stop-color="#00A14C" offset="88.7491%"></stop>
+            <stop stop-color="#00917D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#88357F" offset="0%"></stop>
+            <stop stop-color="#88357F" offset="33.5381%"></stop>
+            <stop stop-color="#8C2B58" offset="71.64547%"></stop>
+            <stop stop-color="#8F2540" offset="100%"></stop>
+            <stop stop-color="#8F2540" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="51.6516016%" y1="0.0974227656%" x2="50.1943566%" y2="66.1858666%" id="linearGradient-5">
+            <stop stop-color="#312A6F" offset="0%"></stop>
+            <stop stop-color="#312A6F" offset="24.2729%"></stop>
+            <stop stop-color="#2C2D73" offset="45.1355%"></stop>
+            <stop stop-color="#1E377F" offset="69.69746%"></stop>
+            <stop stop-color="#064692" offset="96.03714%"></stop>
+            <stop stop-color="#024995" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#6E368C" offset="0%"></stop>
+            <stop stop-color="#3A4190" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#14387F" offset="0%"></stop>
+            <stop stop-color="#19387F" offset="21.55592%"></stop>
+            <stop stop-color="#273881" offset="47.05327%"></stop>
+            <stop stop-color="#3F3983" offset="74.43491%"></stop>
+            <stop stop-color="#5C3986" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100.764799%" y1="50%" x2="-2.58819968%" y2="50%" id="linearGradient-8">
+            <stop stop-color="#88357F" offset="0%"></stop>
+            <stop stop-color="#88357F" offset="33.5381%"></stop>
+            <stop stop-color="#8C2B58" offset="71.64547%"></stop>
+            <stop stop-color="#8F2540" offset="100%"></stop>
+            <stop stop-color="#8F2540" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0000266%" y1="0%" x2="50.0000266%" y2="99.9999982%" id="linearGradient-9">
+            <stop stop-color="#94BD55" offset="0%"></stop>
+            <stop stop-color="#8CBC66" offset="29.93172%"></stop>
+            <stop stop-color="#85BB73" offset="67.27018%"></stop>
+            <stop stop-color="#83BB78" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="46.5366285%" y1="1.06203776%" x2="51.5098938%" y2="99.5271532%" id="linearGradient-10">
+            <stop stop-color="#00A24C" offset="0%"></stop>
+            <stop stop-color="#00A053" offset="26.61451%"></stop>
+            <stop stop-color="#009A65" offset="64.0848%"></stop>
+            <stop stop-color="#00937D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#699F60" offset="0%"></stop>
+            <stop stop-color="#689F60" offset="0.35058%"></stop>
+            <stop stop-color="#4D9752" offset="15.04291%"></stop>
+            <stop stop-color="#389147" offset="30.90149%"></stop>
+            <stop stop-color="#298C40" offset="48.53421%"></stop>
+            <stop stop-color="#208A3B" offset="69.1603%"></stop>
+            <stop stop-color="#1D893A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0000033%" y1="0%" x2="50.0000033%" y2="100%" id="linearGradient-12">
+            <stop stop-color="#00B5DD" offset="0%"></stop>
+            <stop stop-color="#00AFD6" offset="27.51437%"></stop>
+            <stop stop-color="#009EC3" offset="67.17316%"></stop>
+            <stop stop-color="#008BAE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="46.806283%" y1="78.6053047%" x2="51.5469704%" y2="27.3282828%" id="linearGradient-13">
+            <stop stop-color="#62B16E" offset="0%"></stop>
+            <stop stop-color="#86B857" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="47.2063232%" y1="2.22697062%" x2="51.5229839%" y2="101.081707%" id="linearGradient-14">
+            <stop stop-color="#009AD4" offset="0%"></stop>
+            <stop stop-color="#0F9ED1" offset="22.38341%"></stop>
+            <stop stop-color="#37A7C8" offset="65.35178%"></stop>
+            <stop stop-color="#5BB0C0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-15">
+            <stop stop-color="#174290" offset="0%"></stop>
+            <stop stop-color="#20559E" offset="39.71363%"></stop>
+            <stop stop-color="#327AB9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9999891%" y1="100%" x2="49.9999891%" y2="-5.23926055e-14%" id="linearGradient-16">
+            <stop stop-color="#3E9AC9" offset="0%"></stop>
+            <stop stop-color="#1D61A1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Billboard-(1500-×-700-px)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Billboard-(1500-x-700-px)-/-Assembled:-04-Brand-Area-Top-with-additional-content-tile-[savely-detachable]-/-01-primary" transform="translate(-2.000000, -2.000000)">
+            <g id="Billboard-(1500-x-700-px)-/-Parts-/-07-Supergraphic-Bar-/-Horizontal-(0.5-rem)" transform="translate(2.000000, 2.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle"></g>
+                <g id="Basics-/-Supergraphic-/-Horizontal-Full" mask="url(#mask-2)">
+                    <g transform="translate(0.000000, -403.000000)" id="Supergraphic">
+                        <rect id="Rectangle" fill="url(#linearGradient-3)" fill-rule="nonzero" x="0" y="0" width="1496" height="814"></rect>
+                        <g id="Group" fill-rule="nonzero">
+                            <polygon id="Path" fill="url(#linearGradient-4)" points="241.937954 814 426.343069 814 362.138107 407"></polygon>
+                            <polygon id="Path" fill="url(#linearGradient-5)" points="740.568011 0 647.158941 0 596.436916 407.004121 642.596765 814 740.568011 814"></polygon>
+                            <polygon id="Path" fill="url(#linearGradient-6)" points="433.181341 0 433.113946 0 362.138107 407.004121 426.343069 814 525.092388 407.004121"></polygon>
+                            <polygon id="Path" fill="url(#linearGradient-7)" points="647.158941 0 433.181341 0 525.092388 407.004121 426.343069 814 642.596765 814 596.436916 407.004121"></polygon>
+                            <polygon id="Path" fill="#AF1917" points="240.098321 0 115.070658 0 115.070658 251.929652 185.900976 407.004121 115.070658 562.077646 115.070658 814 241.937954 814 196.77938 407.004121"></polygon>
+                            <polygon id="Path" fill="url(#linearGradient-8)" points="433.113946 0 240.098321 0 362.138107 407"></polygon>
+                            <polygon id="Path" fill="#931813" points="115.070658 0 0 0 115.070658 252"></polygon>
+                            <polygon id="Path" fill="#B12638" points="185.900976 407.000472 115.070658 252 115.070658 562"></polygon>
+                            <polygon id="Path" fill="#931813" points="0 814 115.070658 814 115.070658 562"></polygon>
+                            <polygon id="Path" fill="#942331" points="115.070658 251.929652 0 0 0 814 115.070658 562.077646"></polygon>
+                            <polygon id="Path" fill="#D51317" points="240.098321 0 196.77938 407.004121 241.937954 814 362.138107 407.004121"></polygon>
+                            <path d="M1327.03618,689.514016 C1330.65554,622.10747 1347.77956,544.393034 1365.90418,462.107105 C1368.79931,448.94912 1371.74864,435.573591 1374.68549,422.003902 C1371.744,407.424489 1368.79681,393.039236 1365.89455,378.888011 C1347.77457,290.439787 1330.64841,206.913383 1327.03154,134.459574 C1324.22698,78.2126509 1329.95877,36.1371296 1345.5024,0 L1250.54467,0 C1235.00353,48.5352461 1229.26676,77.2530621 1232.07845,133.499291 C1235.69317,205.945773 1252.82184,289.478116 1270.94181,377.921289 C1297.79389,508.933175 1328.86939,659.966884 1318.8903,814 L1345.54876,814 C1329.97588,780.360822 1324.22449,741.897878 1327.03618,689.514016 Z" id="Path" fill="url(#linearGradient-9)"></path>
+                            <path d="M1270.94181,377.921281 C1252.82184,289.478122 1235.69317,205.945777 1232.07845,133.499279 C1229.26676,77.2530634 1235.00353,48.535247 1250.54467,0 L1177.22322,0 C1188.93925,143.275089 1169.40826,283.490324 1149.08493,443.007094 C1137.22164,536.082622 1124.95112,632.314627 1121.77357,710.322594 C1119.48463,766.417938 1122.52953,797.353971 1125.46674,814 L1318.8903,814 C1328.86939,659.966881 1297.79389,508.93317 1270.94181,377.921281 Z" id="Path" fill="url(#linearGradient-10)"></path>
+                            <path d="M1374.68549,422 C1371.74864,435.569824 1368.79931,448.945487 1365.90418,462.103604 C1347.77956,544.390355 1330.65554,622.105567 1327.03618,689.512786 C1324.22449,741.897171 1329.97588,780.3605 1345.54876,814 L1413.8138,814 C1422.72027,676.594596 1398.97407,542.374091 1374.68549,422 Z" id="Path" fill="#169A39"></path>
+                            <path d="M1407.98859,0 C1430.08095,146.989089 1402.5542,293.304113 1374.68549,422.00391 C1398.97407,542.3768 1422.72027,676.595966 1413.8138,814 L1496,814 L1496,0 L1407.98859,0 Z" id="Path" fill="url(#linearGradient-11)"></path>
+                            <path d="M1121.77357,710.322594 C1124.95112,632.314627 1137.22164,536.082622 1149.08493,443.007094 C1169.40826,283.490324 1188.93925,143.275089 1177.22322,0 L1030.73687,0 C1027.80751,30.3109552 1024.77723,50.9564892 1027.06652,111.144559 C1030.24621,194.983956 1042.5071,298.414097 1054.36754,398.446878 C1071.83283,545.722858 1088.70118,687.573342 1085.69087,814 L1125.46674,814 C1122.52953,797.353971 1119.48463,766.417938 1121.77357,710.322594 Z" id="Path" fill="url(#linearGradient-12)"></path>
+                            <polygon id="Path" fill="#283587" points="740.568011 0 740.568011 814 777.159913 407.004121"></polygon>
+                            <path d="M1327.03154,134.458331 C1330.64841,206.91147 1347.77457,290.437102 1365.89455,378.884508 C1368.79681,393.035602 1371.744,407.420722 1374.68549,422 C1402.5542,293.301395 1429.71794,146.987727 1407.62558,0 L1345.5024,0 C1329.95877,36.1367955 1324.22698,78.2119276 1327.03154,134.458331 Z" id="Path" fill="url(#linearGradient-13)"></path>
+                            <path d="M1054.36719,398.446878 C1042.5071,298.414097 1030.24621,194.983956 1027.06616,111.144559 C1024.77687,50.9564892 1027.80715,30.3109552 1030.73687,0 L944.884952,0 C948.042175,106.646584 941.778365,226.516251 930.496661,427.038308 C923.991799,542.652013 913.939607,720.594308 915.948619,814 L1085.69051,814 C1088.70082,687.573342 1071.83283,545.722858 1054.36719,398.446878 Z" id="Path" fill="url(#linearGradient-14)"></path>
+                            <polygon id="Path" fill="url(#linearGradient-15)" points="740.568011 0 777.159913 407.004121 740.568011 814 857.462267 814 857.57994 0"></polygon>
+                            <path d="M930.496661,427.038308 C941.778365,226.516251 948.042531,106.646584 944.884952,0 L857.57994,0 L857.462267,814 L915.948976,814 C913.939607,720.594308 923.992155,542.652013 930.496661,427.038308 Z" id="Path" fill="url(#linearGradient-16)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
