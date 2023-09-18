@@ -12,7 +12,7 @@ function CreatePost() {
     const [title, bindTitle] = useInput('')
     const [content, bindContent] = useInput('')
 
-    const { posts, addPosts } = usePostsContext()
+    const { addPosts } = usePostsContext()
     
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()

@@ -1,9 +1,10 @@
 import { Schema, model } from 'mongoose'
 
-export interface IUser {
+export type IUser = {
     username: string,
     email: string,
-    password: string
+    password: string,
+    birthdate?: Date
 }
 
 const userSchema = new Schema<IUser>({

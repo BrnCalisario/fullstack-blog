@@ -25,10 +25,11 @@ interface Props {
 }
 
 export const PostsProvider = ({ children }: Props) => {
+        
     const [posts, setPosts] = useState<Post[]>([])
 
     const addPosts = (post: Post) => {
-        setPosts((prev) => [...prev, post])
+        setPosts((prev) => [post, ...prev])
     }
 
     const updateVote = (votes: number, index: number) => {
