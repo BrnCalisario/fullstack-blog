@@ -1,6 +1,7 @@
 import express from "express"
 
-import Post, { IPost } from "../models/post.model"
+import PostController from "../controllers/post.controller"
 
 export const postRouter = express.Router()
 
+postRouter.post('/', PostController.createPost)

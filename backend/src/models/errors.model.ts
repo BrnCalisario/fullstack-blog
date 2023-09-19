@@ -22,3 +22,14 @@ export class InsertError extends RequestError {
     }
 }
 
+export class BadEncryptError extends RequestError {
+    constructor(message : string = "Bad Encrypted Body") {
+        super(message, 400)
+    }
+}
+
+export class TokenNotProvidedError extends RequestError {
+    constructor(message : string = "Token not provided") {
+        super(message, 403)
+    }
+}

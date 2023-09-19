@@ -11,7 +11,8 @@ export async function connect() {
 
     mongoose.connect(URI, {
         useNewUrlParser: true,
-        useUnifiedTopology: true
+        useUnifiedTopology: true,
+        dbName : process.env.DB_NAME
     } as ConnectOptions)
 
     database = mongoose.connection

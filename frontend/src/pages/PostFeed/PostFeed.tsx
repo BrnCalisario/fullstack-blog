@@ -1,10 +1,10 @@
 import { Button } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
-import { usePostsContext } from "../contexts/PostContext"
-import PostBox from "../components/Post/PostBox"
-import Post from "../models/Post.model"
 
 import "./PostFeed.scss"
+import { usePostsContext } from "../../contexts/PostContext"
+import Post from "../../models/Post.model"
+import PostBox from "../../components/Post/PostBox"
 
 function PostFeed() {
     const navigate = useNavigate()

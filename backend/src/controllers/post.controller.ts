@@ -3,7 +3,7 @@ import Post, { IPost } from "../models/post.model";
 
 class PostController {
      
-    static async CreatePost(req : Request, res : Response) {
+    static async createPost(req : Request, res : Response) {
         try {
             const data = req.body as IPost
 

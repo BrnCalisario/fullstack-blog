@@ -2,9 +2,11 @@ import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header/Header"
 import "./main.scss"
 import Home from "./pages/Home"
-import PostFeed from "./pages/PostFeed"
+import PostFeed from "./pages/PostFeed/PostFeed"
 import CreatePost from "./components/Post/CreatePost"
 import { PostsProvider } from "./contexts/PostContext"
+import Register from "./pages/Register"
+import Login from "./pages/Login"
 
 function App() {
 	return (
@@ -15,6 +17,8 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/posts" element={<PostFeed />} />
 					<Route path="/create" element={<CreatePost />} />
+					<Route path="/register" element={<Register />} />
+					<Route path="/login" element={<Login />} />
 				</Routes>
 			</div>
 		</PostsProvider>
