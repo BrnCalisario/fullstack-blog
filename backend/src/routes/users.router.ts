@@ -7,3 +7,4 @@ export const userRouter = express.Router()
 
 userRouter.post("/", decryptMiddleware ,UserController.registerUser)
 userRouter.post("/auth", decryptMiddleware ,UserController.authenticateUser)
+userRouter.post("/validate" ,UserController.validateToken)

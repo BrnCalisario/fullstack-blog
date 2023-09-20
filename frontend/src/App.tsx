@@ -7,6 +7,7 @@ import CreatePost from "./components/Post/CreatePost"
 import { PostsProvider } from "./contexts/PostContext"
 import Register from "./pages/Register"
 import Login from "./pages/Login"
+import ProtectedRoute from "./components/ProtectedRoute"
 
 function App() {
 	return (
@@ -19,6 +20,9 @@ function App() {
 					<Route path="/create" element={<CreatePost />} />
 					<Route path="/register" element={<Register />} />
 					<Route path="/login" element={<Login />} />
+					<Route path="/feed" element={<ProtectedRoute>
+						<PostFeed />
+					</ProtectedRoute>} />
 				</Routes>
 			</div>
 		</PostsProvider>

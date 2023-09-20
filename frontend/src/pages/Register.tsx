@@ -4,6 +4,8 @@ import useInput from "brn-useinput"
 import { FormEvent } from "react"
 import { encryptBody } from "../services/encrypt"
 import axios from "axios"
+import { NavLink } from "react-router-dom"
+
 
 function Register() {
 
@@ -58,6 +60,7 @@ function Register() {
                 />
 
                 <Button type="submit" className="mt-3 w-100" variant="primary">Cadastrar</Button>
+                <span>Já possui uma conta ? <NavLink to="/login">Entre</NavLink></span>
             </Form>
         </div>
     )

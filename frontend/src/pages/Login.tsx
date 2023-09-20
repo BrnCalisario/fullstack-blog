@@ -4,6 +4,8 @@ import useInput from "brn-useinput"
 import { FormEvent, useState } from "react"
 import axios from "axios"
 import { encryptBody } from "../services/encrypt"
+import { NavLink } from "react-router-dom"
+import authService from "../services/authService"
 
 function Login() {
 
@@ -22,38 +24,41 @@ function Login() {
         e.preventDefault()
 
         const body = { email, password }        
- 
-        const crypt = encryptBody(body)
         
-        console.log
-
-        await axios.post('http://localhost:3030/user/auth', { 
-            crypt
-        }).then(res => {
         
-            const jwt = res.data
+        await authService.login(body)
+            .catch(err => {
+                console.log(err)
+                setError(true)
+            })
 
-            console.log(jwt)
+        // await axios.post('http://localhost:3030/user/auth', { 
+        //     crypt
+        // }).then(res => {
+        
+        //     const jwt = res.data
 
-            let token = jwt.token
-            let info = jwt.userInfo
+        //     console.log(jwt)
+
+        //     let token = jwt.token
+        //     let info = jwt.userInfo
 
 
-            sessionStorage.setItem('token', token)
-            console.log("authenticated")
+        //     sessionStorage.setItem('token', token)
+        //     console.log("authenticated")
 
-            clearAll()
-        })        
-        .catch(err => {
-            // const { status } = err.response
+        //     clearAll()
+        // })        
+        // .catch(err => {
+        //     // const { status } = err.response
 
-            // console.log(status)
+        //     // console.log(status)
 
-            // if(status === 404)
-            console.log(err)
+        //     // if(status === 404)
+        //     console.log(err)
 
-            setError(true)
-        })
+        //     setError(true)
+        // })
     
     }
 
@@ -74,7 +79,7 @@ function Login() {
 
                 <Button type="submit" className="mt-3 w-100" variant="success">Entrar</Button>
 
-                
+                <span>Não tem uma conta ? <NavLink to="/register">Crie uma aqui</NavLink></span>
             </Form>
         </div>
     )

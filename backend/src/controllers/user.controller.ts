@@ -61,6 +61,18 @@ class UserController {
         return res.status(200).send({ token, userInfo:  { username : user.username, email: user.email} })
 
     }
+
+
+    static async validateToken(req : Request, res: Response) {
+
+        const { token } = req.body
+
+        const result = SecurityService.validateToken(token)
+
+
+        return res.status(200).send({ result })
+
+    }
 }
 
 

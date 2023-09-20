@@ -6,14 +6,14 @@ import errorHandler from './middlewares/errorHandler'
 import { userRouter } from './routes/users.router'
 import { postRouter } from './routes/post.router'
 import cors from "cors"
+import { corsOptions } from './config/options'
 
 
 const PORT = process.env.PORT ?? 3000
 
-
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors(corsOptions))
 
 connect()
 

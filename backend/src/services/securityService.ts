@@ -1,5 +1,8 @@
 import jsonwebtoken from "jsonwebtoken"
+import jwt from "jsonwebtoken"
 import * as bcrypt from "bcryptjs"
+import { SECRET_KEY } from "../middlewares/authHandler"
+
 
 class SecurityService {
 
@@ -32,6 +35,25 @@ class SecurityService {
         const token = jsonwebtoken.sign(data, secret, { expiresIn })
         
         return token
+    }
+
+    static validateToken(token : string) : boolean {
+        try {
+            const secret = process.env.JWT_SECRET
+
+            if(!secret) {
+                throw new Error("Environment not set: JWT SECRET")
+            }
+            
+            jwt.verify(token, secret)
+
+            return true
+        } catch {
+            return false
+        }
+
+
+        return false
     }
 
 }

@@ -18,11 +18,12 @@ export function decryptMiddleware(
 
         const result = bytes.toString(CryptoJS.enc.Utf8)
 
-
         req.body = JSON.parse(result)
 
         next()
     } catch (error) {
+
+        console.log(req.body)
 
         return next(new BadEncryptError())
     }

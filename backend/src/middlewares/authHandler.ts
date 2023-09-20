@@ -1,4 +1,4 @@
-import jwt, { Secret, JwtPayload, Jwt, JsonWebTokenError } from "jsonwebtoken"
+import jwt, { Secret, JwtPayload, Jwt } from "jsonwebtoken"
 import { Request, Response, NextFunction } from "express"
 import { TokenNotProvidedError } from "../models/errors.model"
 
