@@ -2,7 +2,7 @@ import jwt, { Secret, JwtPayload, Jwt, JsonWebTokenError } from "jsonwebtoken"
 import { Request, Response, NextFunction } from "express"
 import { TokenNotProvidedError } from "../models/errors.model"
 
-export const SECRET_KEY : Secret = 'segredo'
+export const SECRET_KEY : Secret = 'SENHA'
 
 export interface CustomRequest extends Request {
     token : string | JwtPayload
@@ -12,8 +12,10 @@ interface Token {
     userId : number
 }
 
-
 export const auth = async (req: Request, res : Response, next : NextFunction) => {
+
+    if(!SECRET_KEY)
+        return next(new Error('Environment not set: API SECRET'))
 
     const token = req.header('Authorization')?.replace('Bearer ', '')  
 

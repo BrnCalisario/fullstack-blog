@@ -2,8 +2,8 @@ import { Button, Form } from "react-bootstrap"
 import FormField from "../components/FormField"
 import useInput from "brn-useinput"
 import { FormEvent } from "react"
-import axios from "axios"
 import { encryptBody } from "../services/encrypt"
+import axios from "axios"
 
 function Register() {
 

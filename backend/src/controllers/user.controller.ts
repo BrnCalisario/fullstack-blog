@@ -5,6 +5,7 @@ import jwt from "jsonwebtoken"
 import { SECRET_KEY } from "../middlewares/authHandler";
 
 import { InsertError, InvalidBodyError } from "../models/errors.model";
+import SecurityService from "../services/securityService";
 
 
 
@@ -17,12 +18,12 @@ class UserController {
 
     static async registerUser(req: Request, res: Response, next : NextFunction) {
                 
-        const { username, email, password } = req.body
+        const { username, email, password } = req.body as IUser
 
         if(!username || !email || !password) 
             return next(new InvalidBodyError());
                 
-        const register : IUser = { username, email, password }
+        const register = { username, email, password }
         
         const hash = bcrypt.hashSync(register.password)
         register.password = hash
@@ -45,19 +46,19 @@ class UserController {
         if(!email || !password)
             return next(new InvalidBodyError())
 
-        const user = await User.findOne({ email })
+        const user : IUser | null = await User.findOne({ email })
 
         if(!user)
             return res.status(404).send({ message : "User not found"})
+    
 
-        if(!bcrypt.compareSync(password, user.password))
+        if(!SecurityService.validatePassword(password, user.password)) 
             return res.status(403).send({ message : "Forbidden"})
+        
 
-        const token = jwt.sign({ _id : user.id?.toString()}, SECRET_KEY, {
-            expiresIn: '2 days'
-        })
+        const token = await SecurityService.generateToken({ userId: user.id }, '2 days')
 
-        return res.status(200).send({ token })
+        return res.status(200).send({ token, userInfo:  { username : user.username, email: user.email} })
 
     }
 }

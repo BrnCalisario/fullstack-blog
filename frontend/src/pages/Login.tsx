@@ -25,13 +25,21 @@ function Login() {
  
         const crypt = encryptBody(body)
         
+        console.log
+
         await axios.post('http://localhost:3030/user/auth', { 
             crypt
         }).then(res => {
         
             const jwt = res.data
 
-            sessionStorage.setItem('token', jwt.token)
+            console.log(jwt)
+
+            let token = jwt.token
+            let info = jwt.userInfo
+
+
+            sessionStorage.setItem('token', token)
             console.log("authenticated")
 
             clearAll()
@@ -42,6 +50,7 @@ function Login() {
             // console.log(status)
 
             // if(status === 404)
+            console.log(err)
 
             setError(true)
         })
@@ -64,6 +73,8 @@ function Login() {
                 />
 
                 <Button type="submit" className="mt-3 w-100" variant="success">Entrar</Button>
+
+                
             </Form>
         </div>
     )
