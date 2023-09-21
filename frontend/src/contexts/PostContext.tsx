@@ -20,11 +20,11 @@ export const usePostsContext = () => {
     return context
 }
 
-interface Props {
+export interface ContextProps {
     children: JSX.Element | JSX.Element[]
 }
 
-export const PostsProvider = ({ children }: Props) => {
+export const PostsProvider = ({ children }: ContextProps) => {
         
     const [posts, setPosts] = useState<Post[]>([])
 

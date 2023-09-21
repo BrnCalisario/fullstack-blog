@@ -1,5 +1,5 @@
 import { Button, Form } from "react-bootstrap"
-import FormField from "../components/FormField"
+import FormField from "../components/Form/FormField"
 import useInput from "brn-useinput"
 import { FormEvent } from "react"
 import { encryptBody } from "../services/encrypt"

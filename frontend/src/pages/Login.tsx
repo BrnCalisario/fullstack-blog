@@ -1,17 +1,17 @@
 import { Button, Form } from "react-bootstrap"
-import FormField from "../components/FormField"
+import FormField from "../components/Form/FormField"
 import useInput from "brn-useinput"
 import { FormEvent, useState } from "react"
-import axios from "axios"
-import { encryptBody } from "../services/encrypt"
 import { NavLink } from "react-router-dom"
 import authService from "../services/authService"
+import { useUserContext } from "../contexts/UserContext"
 
 function Login() {
 
     const [email, bindEmail, resetEmail] = useInput('')
     const [password, bindPassword, resetPassword] = useInput('')
 
+    const { setUserInfo } = useUserContext()
 
     const [error, setError] = useState<boolean>(false)
 
@@ -25,40 +25,19 @@ function Login() {
 
         const body = { email, password }        
         
-        
         await authService.login(body)
+            .then(res => {
+                
+                if(!res)
+                    throw new Error()
+
+                setUserInfo(res)
+            })
             .catch(err => {
                 console.log(err)
                 setError(true)
             })
 
-        // await axios.post('http://localhost:3030/user/auth', { 
-        //     crypt
-        // }).then(res => {
-        
-        //     const jwt = res.data
-
-        //     console.log(jwt)
-
-        //     let token = jwt.token
-        //     let info = jwt.userInfo
-
-
-        //     sessionStorage.setItem('token', token)
-        //     console.log("authenticated")
-
-        //     clearAll()
-        // })        
-        // .catch(err => {
-        //     // const { status } = err.response
-
-        //     // console.log(status)
-
-        //     // if(status === 404)
-        //     console.log(err)
-
-        //     setError(true)
-        // })
     
     }
 

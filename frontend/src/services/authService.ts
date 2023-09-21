@@ -1,36 +1,33 @@
 import axios from "axios"
 import { encryptBody } from "./encrypt"
+import { UserInfo } from "../contexts/UserContext"
 
-
-const API = axios.create({
-    baseURL: "http://localhost:3030",
-    headers: {
-        "Content-Type": "application/json"
-    }
-})
+const URL = "http://localhost:3030"
 
 const authService = {
 
-    async login(data: { email: string, password: string }): Promise<string | null> {
+    async login(data: { email: string, password: string }): Promise<UserInfo | null> {
 
         const crypt = encryptBody(data)
 
         console.log(data)
         console.log(crypt)
 
-        const response = await API.post("/user/auth", crypt)
+        const response = await axios.post(URL + "/user/auth", { crypt })
 
-        const { token, userInfo } = response.data.jwt
+        const { token, userInfo } = response.data
 
         sessionStorage.setItem('token', token)
 
-        return token
-
+        return userInfo as UserInfo
     },
 
-    async isTokenValid(token: string): Promise<boolean> {
+    async validateToken(token: string): Promise<any> {
         const response = await axios.post("http://localhost:3030/user/validate", token)
-        return response.data.result as boolean
+
+        const { result : valid, userInfo } = response.data
+
+        return { valid, userInfo}
     },
 
     logout(): void {

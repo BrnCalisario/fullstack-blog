@@ -8,7 +8,6 @@ export function decryptMiddleware(
     next : NextFunction )
 {
     try {
-
         const secret = process.env.API_SECRET
 
         if(!secret)

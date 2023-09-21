@@ -1,13 +1,9 @@
 import { NextFunction, Request, Response } from "express";
 import User, { IUser } from "../models/user.model";
 import bcrypt from "bcryptjs"
-import jwt from "jsonwebtoken"
-import { SECRET_KEY } from "../middlewares/authHandler";
 
 import { InsertError, InvalidBodyError } from "../models/errors.model";
 import SecurityService from "../services/securityService";
-
-
 
 class UserController {
 
@@ -69,8 +65,14 @@ class UserController {
 
         const result = SecurityService.validateToken(token)
 
+        if(!result)            
+            return res.status(200).send({ result, userInfo: undefined })
 
-        return res.status(200).send({ result })
+        const userId = SecurityService.extractToken(token)
+
+        const userInfo = User.find({ _id : userId })
+
+        return res.status(200).send({ result, userInfo })
 
     }
 }

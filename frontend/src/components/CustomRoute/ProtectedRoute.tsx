@@ -1,5 +1,5 @@
 import React, { ReactNode, useEffect, useState } from 'react'
-import authService from '../services/authService'
+import authService from '../../services/authService'
 import { Navigate } from 'react-router-dom'
 
 type Props = {
@@ -19,7 +19,7 @@ const ProtectedRoute: React.FC<Props> = ({ children }: Props) => {
                 authService.logout()
             } else {
                 try {
-                    const isValid = await authService.isTokenValid(token)
+                    const isValid = await authService.validateToken(token)
 
                     if (!isValid) {
                         authService.logout()

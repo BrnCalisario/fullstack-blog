@@ -1,10 +1,19 @@
 import "./Header.scss"
 import logo from "../../assets/Bosch_logo.svg"
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
+import { useUserContext } from "../../contexts/UserContext"
+import authService from "../../services/authService"
 
 function Header() {
 
+	const { userInfo } = useUserContext()
 
+	const nav = useNavigate()
+
+	const Logoff = () => {
+		authService.logout()
+		nav("/")
+	}
 
 	return (
 		<nav id="header"> 	
@@ -13,7 +22,12 @@ function Header() {
 				<div id="links">
 					<NavLink className="link" to="/posts">Posts</NavLink> 
 					{/* <NavLink className="link" to="/register">Cadastro</NavLink>  */}
-					<NavLink className="link" to="/login">Entrar</NavLink> 
+					
+					{ !userInfo ? 
+						<NavLink className="link" to="/login">Entrar</NavLink> 
+						: <a className="link">Sair</a> }
+					
+					
 				</div>
 			</div>
 		</nav>

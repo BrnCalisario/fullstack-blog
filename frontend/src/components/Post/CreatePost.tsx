@@ -1,6 +1,6 @@
 import { Button, Form } from "react-bootstrap"
 import useInput from "brn-useinput"
-import FormField from "../FormField"
+import FormField from "../Form/FormField"
 import { FormEvent, useEffect, useState } from "react"
 import { usePostsContext } from "../../contexts/PostContext"
 
@@ -13,7 +13,7 @@ function CreatePost() {
     const [content, bindContent] = useInput('')
 
     const { addPosts } = usePostsContext()
-    
+
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
@@ -39,7 +39,6 @@ function CreatePost() {
         return () => clearTimeout(timer)
 
     }, [success])
-
 
     return (
         <div>

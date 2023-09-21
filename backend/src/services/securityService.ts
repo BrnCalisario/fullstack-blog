@@ -51,9 +51,17 @@ class SecurityService {
         } catch {
             return false
         }
+    }
 
 
-        return false
+    static extractToken(token : string) : any {
+        try {
+            const result = jwt.decode(token)
+
+            return result
+        } catch {
+            return undefined
+        }
     }
 
 }
